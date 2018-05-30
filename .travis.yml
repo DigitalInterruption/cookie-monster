@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "node"
+  - "lts/*"
+cache: yarn
+script: yarn test
+branches:
+  except:
+    - gh-pages
