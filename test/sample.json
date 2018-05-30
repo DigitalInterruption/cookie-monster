@@ -1,0 +1,19 @@
+[{
+  "name": "session",
+  "samples": [{
+    "ip": "127.0.0.1",
+    "port": 80,
+    "data": "eyJmb28iOiJiYXIifQ==",
+    "sig": "LVMVxSNPdU_G8S3mkjlShUD78s4"
+   }, {
+    "ip": "127.0.0.1",
+    "port": 3000,
+    "data": "eyJmb28iOiJiYXIifQ==",
+    "sig": "LVMVxSNPdU_G8S3mkjlShUD78s4"
+   }, {
+    "ip": "127.0.0.1",
+    "port": 8080,
+    "data": "eyJmb28iOiJiYXIifQ==",
+    "sig": "LVMVxSNPdU_G8S3mkjlShUD78s5"
+   }]
+}]
