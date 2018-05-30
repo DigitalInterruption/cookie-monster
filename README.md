@@ -1,5 +1,4 @@
-cookie-monster
-==============
+# cookie-monster [![Build Status](https://travis-ci.org/DigitalInterruption/cookie-monster.svg?branch=master)](https://travis-ci.org/DigitalInterruption/cookie-monster)
 A utility for automating the testing and re-signing of Express.js cookie secrets.
 
 Dependencies
