@@ -11,13 +11,13 @@ Installation
 ------------
 `cookie-monster` is available on [npm](https://www.npmjs.com/). To install it, type:
 
-```
+```text
 $ yarn global add @digital-interruption/cookie-monster
 ```
 
 Alternatively, to install from source:
 
-```
+```text
 $ git clone https://github.com/DigitalInterruption/cookie-monster
 $ cd cookie-monster
 $ yarn install
@@ -28,7 +28,7 @@ Usage
 -----
 After installation, the `cookie-monster` executable will be available, and accepts the following arguments:
 
-```
+```text
 -b, --batch              Enable batch mode.                                                            
 -c, --cookie string      The session cookie to use when not using batch mode.                          
 -e, --encode             Enable encode mode.                                                           
@@ -102,32 +102,32 @@ A sample file can be found below:
 Examples
 --------
 ### Test a single cookie
-```
+```text
 $ cookie-monster -c eyJmb28iOiJiYXIifQ== -s LVMVxSNPdU_G8S3mkjlShUD78s4
 ```
 
 ### Test a single cookie with a specific name
-```
+```text
 $ cookie-monster -c eyJmb28iOiJiYXIifQ== -s LVMVxSNPdU_G8S3mkjlShUD78s4 -n session
 ```
 
 ### Test a single cookie with a custom wordlist
-```
+```text
 $ cookie-monster -c eyJmb28iOiJiYXIifQ== -s LVMVxSNPdU_G8S3mkjlShUD78s4 -w custom.lst
 ```
 
 ### Test multiple cookies using batch mode
-```
+```text
 $ cookie-monster -b -f cookies.json
 ```
 
 ### Test multiple cookies using batch mode with a custom wordlist
-```
+```text
 $ cookie-monster -b -f cookies.json -w custom.lst
 ```
 
 ### Test a cookie and save the results to a file
-```
+```text
 $ cookie-monster -c eyJmb28iOiJiYXIifQ== -s LVMVxSNPdU_G8S3mkjlShUD78s4 -o results.json
 ```
 
@@ -159,7 +159,7 @@ A sample results file can be found below:
 ```
 
 ### Encode and sign a new cookie
-```
+```text
 $ cookie-monster -e -f new_cookie.json -k secret
 ```
 
@@ -173,7 +173,7 @@ $ cookie-monster -e -f new_cookie.json -k secret
 
 The output from `cookie-monster` will then provide both encoded cookies which can be copied directly into a HTTP request:
 
-```
+```text
 [+] Data Cookie: session=eyJmb28iOiJiYXIifQ==
 [+] Signature Cookie: session.sig=YyeDeoG1AwlyHWZWt1MIMum4dZg
 ```
