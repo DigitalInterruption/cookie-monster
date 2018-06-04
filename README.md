@@ -179,4 +179,4 @@ The output from `cookie-monster` will then provide both encoded cookies which ca
 
 More Information
 ----------------
-For more information on this type of attach, see our [whitepaper](https://file.digitalinterruption.com/Are_Your_Cookies_Telling_Your_Fortune.pdf).
+For more information on this type of attach, see our [blog post](https://www.digitalinterruption.com/single-post/2018/06/04/Are-Your-Cookies-Telling-Your-Fortune) and [whitepaper](https://file.digitalinterruption.com/Are_Your_Cookies_Telling_Your_Fortune.pdf).
