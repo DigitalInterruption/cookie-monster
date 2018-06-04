@@ -176,3 +176,7 @@ The output from `cookie-monster` will then provide both encoded cookies which ca
 [+] Data Cookie: session=eyJmb28iOiJiYXIifQ==
 [+] Signature Cookie: session.sig=YyeDeoG1AwlyHWZWt1MIMum4dZg
 ```
+
+More Information
+----------------
+For more information on this type of attach, see our [whitepaper](https://file.digitalinterruption.com/Are_Your_Cookies_Telling_Your_Fortune.pdf)
