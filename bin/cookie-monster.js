@@ -12,7 +12,9 @@ const options = commandLineArgs(usage.optionList, {
 })
 
 function printSmallBanner () {
-  console.log(chalk.whiteBright(banner.small()))
+  if (process.env.NODE_ENV !== 'test') {
+    console.log(chalk.whiteBright(banner.small()))
+  }
 }
 
 function exit (error, logError = true) {

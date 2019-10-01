@@ -1,6 +1,6 @@
 {
   "name": "@digital-interruption/cookie-monster",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A utility for automating the testing and re-signing of Express.js cookie secrets",
   "repository": {
     "type": "git",
@@ -15,17 +15,17 @@
   "author": "Digital Interruption",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "chalk": "^2.3.2",
-    "colors": "^1.2.1",
-    "command-line-args": "^5.0.2",
-    "command-line-usage": "^5.0.4",
+    "body-parser": "^1.19.0",
+    "chalk": "^2.4.2",
+    "colors": "^1.4.0",
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^6.0.2",
     "cookie-session": "^2.0.0-beta.3",
-    "csvtojson": "^1.1.9",
-    "express": "^4.16.3",
-    "express-session": "^1.15.6",
-    "indent-string": "^3.2.0",
-    "request": "^2.85.0"
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "indent-string": "^4.0.0",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",

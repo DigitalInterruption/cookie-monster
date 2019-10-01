@@ -61,7 +61,6 @@ describe('cookie-monster', () => {
     })
 
     revertMocks = subject.__set__({
-      console: { log: () => false },
       options: Object.assign({}, validArgs, options),
       usage: usageSpy,
       fs: mockFs
@@ -76,7 +75,7 @@ describe('cookie-monster', () => {
     chai.spy.restore()
   })
 
-  context('when invoked with the `-h` option', () => {
+  describe('when invoked with the `-h` option', () => {
     it('should display the usage guidelines', async () => {
       setupMocks({ help: true })
       await subject.run()
@@ -84,8 +83,8 @@ describe('cookie-monster', () => {
     })
   })
 
-  context('when invoked with the `-b` option', () => {
-    context('if an input file is not specified', () => {
+  describe('when invoked with the `-b` option', () => {
+    describe('if an input file is not specified', () => {
       it('should log an error', async () => {
         setupMocks({ batch: true, inputFile: null })
         await subject.run()
@@ -95,7 +94,7 @@ describe('cookie-monster', () => {
       })
     })
 
-    context('if the input file does not exist', () => {
+    describe('if the input file does not exist', () => {
       it('should log an error', async () => {
         setupMocks({
           batch: true,
@@ -141,8 +140,8 @@ describe('cookie-monster', () => {
     })
   })
 
-  context('when not invoked with the `-b` option', () => {
-    context('if no cookie data is specified', () => {
+  describe('when not invoked with the `-b` option', () => {
+    describe('if no cookie data is specified', () => {
       it('should log an error', async () => {
         setupMocks({ batch: false, cookie: null })
         await subject.run()
@@ -152,7 +151,7 @@ describe('cookie-monster', () => {
       })
     })
 
-    context('if no cookie name is specified', () => {
+    describe('if no cookie name is specified', () => {
       it('should default the value to `session`', async () => {
         setupMocks({ batch: false, name: null })
         await subject.run()
@@ -162,7 +161,7 @@ describe('cookie-monster', () => {
       })
     })
 
-    context('if no cookie signature is specified', () => {
+    describe('if no cookie signature is specified', () => {
       it('should log an error', async () => {
         setupMocks({ batch: false, signature: null })
         await subject.run()
@@ -184,7 +183,7 @@ describe('cookie-monster', () => {
     })
   })
 
-  context('if no wordlist is specified', () => {
+  describe('if no wordlist is specified', () => {
     it('should log an error', async () => {
       setupMocks({
         batch: false,
@@ -199,7 +198,7 @@ describe('cookie-monster', () => {
     })
   })
 
-  context('if the specified wordlist does not exist', () => {
+  describe('if the specified wordlist does not exist', () => {
     it('should log an error', async () => {
       setupMocks({
         batch: false,
@@ -214,7 +213,7 @@ describe('cookie-monster', () => {
     })
   })
 
-  context('if the output option is specified', () => {
+  describe('if the output option is specified', () => {
     it('should save successful tests to the specified file', async () => {
       setupMocks({ batch: false, wordlist: '/wordlist', output: '/results.json' })
       await subject.run()
@@ -234,8 +233,8 @@ describe('cookie-monster', () => {
     })
   })
 
-  context('when invoked with the `-e` option', () => {
-    context('if an input file is not specified', () => {
+  describe('when invoked with the `-e` option', () => {
+    describe('if an input file is not specified', () => {
       it('should log an error', async () => {
         setupMocks({ encode: true, inputFile: null })
         await subject.run()
@@ -245,7 +244,7 @@ describe('cookie-monster', () => {
       })
     })
 
-    context('if a secret key is not specified', () => {
+    describe('if a secret key is not specified', () => {
       it('should log an error', async () => {
         setupMocks({ encode: true, secret: null })
         await subject.run()
@@ -255,7 +254,7 @@ describe('cookie-monster', () => {
       })
     })
 
-    context('if no cookie name is specified', () => {
+    describe('if no cookie name is specified', () => {
       it('should default the value to `session`', async () => {
         setupMocks({ batch: false, encode: true, name: null })
         await subject.run()
