@@ -1,6 +1,6 @@
 {
   "name": "@digital-interruption/cookie-monster",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A utility for automating the testing and re-signing of Express.js cookie secrets",
   "repository": {
     "type": "git",
